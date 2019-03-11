@@ -6,4 +6,4 @@ related anagram puzzles.
 
 The app is currently hosted here:
 
-<https://robertaumer.shinyapps.io/Wordscape-Solver/>
+<https://robertaumer.shinyapps.io/wordscape-solver/>
