@@ -11,5 +11,5 @@ This is a just-for-fun shiny app to help solve Wordscapes, or other related anag
 
 The app is currently hosted here:
 
-https://robertaumer.shinyapps.io/Wordscape-Solver/ 
+https://robertaumer.shinyapps.io/wordscape-solver/ 
 
