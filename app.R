@@ -89,7 +89,8 @@ server <- function(input, output) {
     # quick!)
     validated_letters <- reactive({
         str_to_lower(input$letters) %>%
-            str_trunc(7, ellipsis = '')
+            str_trunc(7, ellipsis = '')  %>%
+            str_squish()
     })
     
     # Build the list of possible words
