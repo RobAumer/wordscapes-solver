@@ -61,7 +61,7 @@ ui <- fluidPage(
                help stumped gamers find the words they are missing. <br> <br>'),
             textInput(inputId = 'letters',
                       label = "Enter Between 4 and 7 letters",
-                      value = "girfgoe"),
+                      value = "stumped"),
             textOutput("word_count"),
             hr(),
             HTML('*English words are validate using the <code> hunspell </code> package')
