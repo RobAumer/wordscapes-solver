@@ -5,8 +5,8 @@ account: robertaumer
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 781962
-bundleId: 1931772
+bundleId: 2779946
 url: https://robertaumer.shinyapps.io/wordscapes-solver/
-when: 1552334133.25771
+when: 1581004928.45301
 asMultiple: FALSE
 asStatic: FALSE

@@ -1,0 +1,35 @@
+---
+title: "Using the Google Dictionary API"
+output: html_notebook
+---
+
+```{r setup, include=FALSE}
+library(httr)
+library(jsonlite)
+library(tidyverse)
+```
+
+```{r}
+word_to_lookup <- "cat"
+base_url <- "https://googledictionaryapi.eu-gb.mybluemix.net/?define="
+lang_arg <- "lang=en"
+full_url <- paste0(base_url, word_to_lookup, "&", lang_arg)
+
+reponse <- httr::GET(full_url)
+
+parsed_repsonse <- httr::content(reponse)
+
+meaning <- parsed_repsonse[[1]]$meaning
+
+fields <- meaning %>% names()
+
+
+# print the definitions
+for (i in fields) {
+  for (j in 1:length(meaning[[i]])) {
+    print(paste(i, ":", meaning[[i]][[j]]$definition))
+  }
+}
+
+```
+
